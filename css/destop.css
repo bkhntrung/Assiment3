@@ -1,0 +1,323 @@
+.bg-grey {
+  background: #f7f7f7;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+:root {
+  --pink: pink;
+  --blue: blue;
+}
+/* Thiết lập chung cho các thẻ */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+i {
+  color: rgba(33, 3, 82, 0.778);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* BANNER */
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  color: #fff;
+}
+
+/* NAVBAR */
+#nav-bar a {
+  padding: 10px 20px;
+}
+
+#nav-bar img {
+  max-width: 75%;
+}
+
+/* FORM EMAIL */
+.triangle {
+  margin-left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid grey;
+  opacity: 0.8;
+}
+
+.rectangle {
+  display: inline-block;
+  background: grey;
+  opacity: 0.8;
+  color: white;
+}
+
+.error-email {
+  position: absolute;
+  top: 37px;
+  left: 100px;
+}
+
+/* JOB-INFO */
+/* KINH NGHIỆM - HỌC VẤN - HOẠT ĐỘNG */
+#job-info .grid-lg-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+#job-info .container > div {
+  padding: 30px;
+  border: solid 2px rgb(250, 213, 250);
+}
+
+.btn-hover button {
+  visibility: hidden;
+}
+
+.btn-hover:hover button {
+  visibility: visible;
+}
+
+#job-info .container > div:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.job-title .fa {
+  font-size: 200%;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#job-info li {
+  margin-bottom: 20px;
+}
+
+#job-info li::marker {
+  color: rgb(95, 95, 208);
+  font-size: 25px;
+}
+
+#job-info p {
+  font-style: italic;
+}
+
+/* SỞ THÍCH */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.hobby i {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: var(--blue) 2px solid;
+  margin-bottom: 10px;
+}
+.hobby i::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150%;
+}
+
+/* NGÔN NGỮ - KỸ NĂNG*/
+.level-skill-0 {
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  background-color: grey;
+  margin-right: 10px;
+}
+
+.level-skill-1 {
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  background-color: var(--blue);
+  margin-right: 10px;
+}
+
+/* CHỨNG CHỈ GIẢI THƯỞNG */
+#certificate .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+#certificate .grid-2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #d6c08d;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.certificate-1,
+.certificate-2,
+.certificate-3 {
+  display: flex;
+  gap: 30px;
+}
+
+.certificate-2::before {
+  position: absolute;
+  left: -20px;
+  transform: translateX(-50%);
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background-color: #d6c08d;
+}
+
+#certificate img {
+  width: 40%;
+}
+
+/* DỰ ÁN */
+#project .grid-lg-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  column-gap: 20px;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#project table {
+  flex-grow: 1;
+  border-collapse: collapse;
+}
+
+#project img {
+  width: 100%;
+}
+
+#project span {
+  margin-right: 1rem;
+}
+
+.project-title {
+  border: 1px solid var(--pink);
+}
+
+tr {
+  border: 1px solid var(--pink);
+  vertical-align: top;
+}
+
+td:first-child {
+  padding-left: 0.5rem;
+  width: 25%;
+}
+
+.project-1 div:nth-child(3),
+.project-2 div:nth-child(3),
+.project-3 div:nth-child(3) {
+  border-left: 1px solid var(--pink);
+  border-right: 1px solid var(--pink);
+}
+
+/* FOOTER */
+#footer ul {
+  list-style-type: none;
+}
+
+#footer li {
+  margin-right: 20px;
+}
+
+/* PROJECT CHARTER */
+#project-charter {
+  display: grid;
+  grid-template-columns: 6fr 3fr 3fr;
+  gap: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+.timeline {
+  grid-column: 3/4;
+  grid-row: 1 / 3;
+}
+
+.scopes {
+  grid-column: 1/2;
+  grid-row: 2 / 3;
+}
+
+.primary {
+  grid-column: 2/3;
+  grid-row: 2 / 3;
+}
+
+#project-charter nav {
+  position: absolute;
+  top: -40px;
+}
+#project-charter > div {
+  background-color: rgba(200, 255, 255);
+  padding: 40px 20px;
+}
+
+#project-charter h1 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid grey;
+}
+
+#project-charter .flex-2 {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+#project-charter i {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.flex-2 > * {
+  padding: 10px 0;
+}
+
+.goals .flex-2 {
+  border-bottom: 1px solid grey;
+}
+
+.timeline .flex-2 > div:nth-child(2) {
+  border-bottom: 1px dashed grey;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}

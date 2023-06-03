@@ -1,0 +1,21 @@
+@media screen and (max-width: 576px) {
+  /* NAVBAR */
+  #nav-bar a {
+    display: block;
+    text-align: start;
+  }
+  #nav-bar a:nth-child(3) {
+    display: none;
+  }
+
+  /* JOB-INFO */
+  #job-info .container {
+    display: block;
+  }
+
+  /* DỰ ÁN */
+  #project .grid-lg-3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

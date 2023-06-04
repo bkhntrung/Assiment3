@@ -3,6 +3,7 @@
   #nav-bar a {
     display: block;
     text-align: start;
+    border: none !important;
   }
   #nav-bar a:nth-child(3) {
     display: none;
